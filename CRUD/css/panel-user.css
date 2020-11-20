@@ -1,0 +1,49 @@
+﻿.tb-left {
+    Width: 400px;
+}
+
+.tb-center {
+    Width: inherit;
+}
+
+.tb-right {
+    Width: 400px;
+}
+
+.style-panel-user {
+    Width: 500px;
+    font-size: 15px;
+    background-color: #fffdd3;
+}
+
+.style-txt-search {
+    Width: 350px;
+    margin-left: 10px;
+    margin-right: 8px;
+}
+
+.style-bt-search {
+    margin-right: 8px;
+}
+
+.style-bt-exit {
+    Width: 77px;
+    margin-left: 120px;
+    margin-right: 8px;
+    margin-top: 10px;
+}
+
+.style-bt-edit {
+    Width: 77px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.style-bt-delete {
+    Width: 77px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.GridView1 {    
+}

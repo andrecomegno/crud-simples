@@ -1,0 +1,57 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    height: 782px;
+}
+
+.td-left {
+    Width: 600px;
+}
+
+.td-right {
+    Width: 400px;
+}
+
+.style-panel-login {
+    Width: 250px;
+    background-color: #ecffde;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+
+.style-txt-login {
+    margin-left: -100px;
+    color: #000000;
+}
+
+.style-input {
+    margin-left: 2px;
+    font-size: 17px;
+    Width: 180px;
+    padding: 5px 6px;
+}
+
+.style-bt-login {
+    background-color: #0094ff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+}
+
+.style-bt-register {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+}
+
+.style-txt-remember {
+    margin: 8px 0;    
+    font-size: 12px;
+}
+
