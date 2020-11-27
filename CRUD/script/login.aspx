@@ -17,18 +17,19 @@
                     <asp:Panel CssClass="style-panel-login" runat="server" HorizontalAlign="Center">
                         <br />
                         <br />
-                        <asp:TextBox CssClass="style-input" placeholder="Login" runat="server" MaxLength="150" TabIndex="1" ValidateRequestMode="Enabled" ID="input_login"></asp:TextBox>
+                        <asp:TextBox CssClass="style-input" placeholder="E-Mail" runat="server" MaxLength="150" TabIndex="1" ValidateRequestMode="Enabled" ID="input_login"></asp:TextBox>
                         <br />
                         <br />
                         <asp:TextBox CssClass="style-input" placeholder="Senha" runat="server"  MaxLength="8" TabIndex="2" TextMode="Password" ID="input_password"></asp:TextBox>
                         <br />
+                        <asp:Label ID="error" runat="server" ForeColor="#CC3300"></asp:Label>
                         <br />
                         <asp:Button CssClass="style-bt-login" runat="server" Text="Entrar" TabIndex="3" ID="bt_enter" OnClick="bt_enter_Click" Font-Bold="True" Font-Overline="False" Font-Size="Medium" Font-Strikeout="False" Font-Underline="False" />
                         <br />
                         <asp:LinkButton ID="link_remember" runat="server" CssClass="style-txt-remember" PostBackUrl="~/script/password-remember.aspx" TabIndex="5">Esqueceu a senha ?</asp:LinkButton>
                         <br />
                         <br />                        
-                        <asp:Button CssClass="style-bt-register" runat="server" TabIndex="4" Text="Cadastrar" ID="bt_register" OnClick="bt_register_Click" Font-Bold="True" Font-Size="Medium" PostBackUrl="~/script/register.aspx" />
+                        <asp:Button CssClass="style-bt-register" runat="server" TabIndex="4" Text="Cadastrar" ID="bt_register" Font-Bold="True" Font-Size="Medium" PostBackUrl="~/script/register.aspx" />
                         <br />
                         <br />
                     </asp:Panel>
