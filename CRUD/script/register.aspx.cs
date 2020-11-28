@@ -58,7 +58,6 @@ namespace CRUD.script
             }
         }
 
-
         private void Register()
         {
             database database = new database();
@@ -202,7 +201,6 @@ namespace CRUD.script
                 Register();
                 Response.Redirect("panel-user.aspx", false);                
             }
-
         }
     }
 }
