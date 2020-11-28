@@ -46,7 +46,7 @@
                         <asp:TextBox CssClass="style-txt-email" runat="server" MaxLength="250" placeholder="E-Mail" TabIndex="6" TextMode="Email" ID="input_email"></asp:TextBox>
                         <asp:TextBox CssClass="style-txt-password" runat="server" MaxLength="6" placeholder="Nova Senha" TabIndex="8" ID="input_password" ></asp:TextBox>
                         <br />
-                        <asp:TextBox ID="input_email_confirm" runat="server" CssClass="style-txt-email" MaxLength="250" placeholder="Confirmar E-Mail" TabIndex="7" TextMode="Email"></asp:TextBox>
+                        <asp:TextBox CssClass="style-txt-email" runat="server"  MaxLength="250" placeholder="Confirmar E-Mail" TabIndex="7" TextMode="Email" ID="input_email_confirm"></asp:TextBox>
                         <asp:TextBox CssClass="style-txt-password" runat="server" MaxLength="6" placeholder="Confirmar Senha" TabIndex="9" TextMode="Password" ID="input_password_confirm"></asp:TextBox>
                         <br />
                         </asp:Panel>
@@ -58,7 +58,7 @@
                     </asp:Panel>
                     <asp:Panel CssClass="style-panel-search" runat="server" ID="panel_search">
                         <br />
-                        <asp:TextBox CssClass="style-txt-search" runat="server" TabIndex="1" MaxLength="250" ID="input_search"></asp:TextBox>
+                        <asp:TextBox CssClass="style-txt-search" placeholder="Digite um Nome" runat="server" TabIndex="1" MaxLength="250" ID="input_search" ></asp:TextBox>
                         <asp:Button CssClass="style-bt-search" placeholder="Digite CPF para buscar" runat="server" Text="Buscar" TabIndex="2" ID="bt_search" OnClick="bt_search_Click" Font-Bold="True" Font-Size="Medium" />
                         <br />
                         <br />

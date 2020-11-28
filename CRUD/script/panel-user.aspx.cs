@@ -22,7 +22,7 @@ namespace CRUD.script
             if (!IsPostBack)
             {
                 GridViewLogic();
-            }           
+            }
 
             BTlogic();
         }
@@ -38,6 +38,8 @@ namespace CRUD.script
                     input_city.Text = resultado.cidade;
                     input_neighborhood.Text = resultado.bairro;
                     input_state.Text = resultado.uf;
+
+                    error.Text = "";
                 }
                 catch
                 {
@@ -59,13 +61,24 @@ namespace CRUD.script
             {
                 database database = new database();
                 database.openConnection();
-                MySqlCommand cmd = new MySqlCommand("select p.nome, p.cpf, from cadastro.pessoa p where nome like '%", database.getConnection());
 
+                MySqlCommand cmd = new MySqlCommand("select id, nome, cpf from cadastro.pessoa where nome like @name '%' ", database.getConnection());
+                cmd.Parameters.AddWithValue("@name", input_search.Text);
 
+                using (MySqlDataAdapter da = new MySqlDataAdapter(cmd))
+                {
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+
+                    GridView1.DataSource = dt;
+                    GridView1.DataBind();
+                    input_search.Text = "";
+                }
+               
             }
             catch (System.Exception ex)
             {
-                MessageBox.Show(ex.Message, "AVISO !", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(ex.Message, "AVISO !", MessageBoxButtons.OK, MessageBoxIcon.Information);                
             }
         }
 
@@ -128,21 +141,21 @@ namespace CRUD.script
                 database database = new database();
                 database.openConnection();
 
-                MySqlCommand cmd = new MySqlCommand("update cadastro.pessoa p join cadastro.endereco e on p.ID = e.ID join cadastro.telefone t on t.ID = e.ID join cadastro.telefone_tipo tp on tp.ID = e.ID set p.nome=@nome, p.cpf=@cpf, t.DDD=@ddd, t.NUMERO=@phoneNumber, tp.TIPO=@tipo, e.CEP=@cep, e.LOGRADOURO=@endereco, e.NUMERO=@numero, e.BAIRRO=@bairro, e.CIDADE=@cidade, e.ESTADO=@estado, p.email=@email, p.senha=@senha where p.ID=@id", database.getConnection());
+                MySqlCommand cmd = new MySqlCommand("update cadastro.pessoa p join cadastro.endereco e on p.ID = e.ID join cadastro.telefone t on t.ID = e.ID join cadastro.telefone_tipo tp on tp.ID = e.ID set p.nome=@name, p.cpf=@cpf, t.DDD=@ddd, t.NUMERO=@phoneNumber, tp.TIPO=@type, e.CEP=@cep, e.LOGRADOURO=@address, e.NUMERO=@address_n, e.BAIRRO=@neighborhood, e.CIDADE=@city, e.ESTADO=@state, p.email=@email, p.senha=@password where p.ID=@id", database.getConnection());
 
-                cmd.Parameters.AddWithValue("@nome", input_name.Text);
+                cmd.Parameters.AddWithValue("@name", input_name.Text);
                 cmd.Parameters.AddWithValue("@cpf", input_cpf.Text);
                 cmd.Parameters.AddWithValue("@ddd", input_ddd.Text);
                 cmd.Parameters.AddWithValue("@phoneNumber", input_phone.Text);
-                cmd.Parameters.AddWithValue("@tipo", input_phone_type.Text);
+                cmd.Parameters.AddWithValue("@type", input_phone_type.Text);
                 cmd.Parameters.AddWithValue("@cep", input_zip.Text);
-                cmd.Parameters.AddWithValue("@endereco", input_address.Text);
-                cmd.Parameters.AddWithValue("@numero", input_address_number.Text);
-                cmd.Parameters.AddWithValue("@bairro", input_neighborhood.Text);
-                cmd.Parameters.AddWithValue("@cidade", input_city.Text);
-                cmd.Parameters.AddWithValue("@estado", input_state.Text);
+                cmd.Parameters.AddWithValue("@address", input_address.Text);
+                cmd.Parameters.AddWithValue("@address_n", input_address_number.Text);
+                cmd.Parameters.AddWithValue("@neighborhood", input_neighborhood.Text);
+                cmd.Parameters.AddWithValue("@city", input_city.Text);
+                cmd.Parameters.AddWithValue("@state", input_state.Text);
                 cmd.Parameters.AddWithValue("@email", input_email.Text);
-                cmd.Parameters.AddWithValue("@senha", input_password.Text);
+                cmd.Parameters.AddWithValue("@password", input_password.Text);
 
                 cmd.Parameters.AddWithValue("@id", id);
 
@@ -154,7 +167,7 @@ namespace CRUD.script
                 }
 
                 database.closeConnection();
-
+                error.ForeColor = System.Drawing.Color.Green;
                 error.Text = "Cadastro atualizado com sucesso !";
             }
             catch (System.Exception ex)
@@ -176,7 +189,7 @@ namespace CRUD.script
                 input_state.Text = "";
                 input_email.Text = "";
                 input_password.Text = "";
-                id = "";
+                id = "";                
             }
         }
 
@@ -234,10 +247,14 @@ namespace CRUD.script
                 cmdPessoaTelefone.Parameters.AddWithValue("@id", id);
                 cmdPessoaTelefone.ExecuteNonQuery();
 
-                int t = cmdPessoa.ExecuteNonQuery();
-                if (t > 0)
-                {                    
-                    GridViewLogic();
+                MySqlCommand cmd = new MySqlCommand("select p.ID, p.nome, p.cpf, t.DDD, t.NUMERO, tp.TIPO, p.email, p.senha, e.CEP, e.LOGRADOURO, e.NUMERO, e.BAIRRO, e.CIDADE, e.ESTADO from cadastro.pessoa p join cadastro.endereco e on p.ID = e.ID join cadastro.telefone t on t.ID = e.ID join cadastro.telefone_tipo tp on tp.ID = e.ID", database.getConnection());
+                using (MySqlDataAdapter da = new MySqlDataAdapter(cmd))
+                {
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+
+                    GridView1.DataSource = dt;
+                    GridView1.DataBind();
                 }
 
                 database.closeConnection();
@@ -330,6 +347,7 @@ namespace CRUD.script
             GridView1.Columns[0].ItemStyle.Width = 20;
             GridView1.Columns[1].ItemStyle.Width = 300;
             GridView1.Columns[3].ItemStyle.Width = 110;
+            
         }
 
         protected void DeleteLogic()

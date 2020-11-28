@@ -24,10 +24,10 @@ namespace CRUD.script
                 database database = new database();
                 database.openConnection();
 
-                MySqlCommand cmd = new MySqlCommand("select * from pessoa where email=@email and senha=@senha", database.getConnection());
+                MySqlCommand cmd = new MySqlCommand("select * from pessoa where email=@email and senha=@password", database.getConnection());
 
                 cmd.Parameters.AddWithValue("@email",input_login.Text);
-                cmd.Parameters.AddWithValue("@senha", input_password.Text);                
+                cmd.Parameters.AddWithValue("@password", input_password.Text);                
 
                 var v = cmd.ExecuteScalar();
 

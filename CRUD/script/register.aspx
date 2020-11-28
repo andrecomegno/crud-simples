@@ -47,10 +47,10 @@
                         <asp:Panel CssClass="style-panel-three" runat="server" HorizontalAlign="Center" ID="panel_three">
                             <br />
                             <asp:TextBox CssClass="style-txt-email" placeholder="E-Mail" runat="server" MaxLength="250" TabIndex="6" ID="input_email" TextMode="Email"></asp:TextBox>
-                            <asp:TextBox CssClass="style-txt-password" placeholder="Senha" runat="server" MaxLength="6" TabIndex="8" ID="input_password" TextMode="Password"></asp:TextBox>
+                            <asp:TextBox CssClass="style-txt-password" placeholder="Senha" runat="server" MaxLength="6" TabIndex="8" ID="input_password" TextMode="Password" ValidateRequestMode="Enabled"></asp:TextBox>
                             <br />
                             <asp:TextBox CssClass="style-txt-email" placeholder="Confirmar E-Mail" runat="server" MaxLength="250" TabIndex="7" ID="input_email_confirm" TextMode="Email"></asp:TextBox>
-                            <asp:TextBox CssClass="style-txt-password" placeholder="Confirmar Senha" runat="server" MaxLength="6" TabIndex="9" ID="input_password_confirm" TextMode="Password"></asp:TextBox>
+                            <asp:TextBox CssClass="style-txt-password" placeholder="Confirmar Senha" runat="server" MaxLength="6" TabIndex="9" ID="input_password_confirm" TextMode="Password" ValidateRequestMode="Enabled"></asp:TextBox>
                             <asp:Button ID="bt_cancel" runat="server" CssClass="style-bt-cancel" Font-Bold="True" Font-Size="Medium" placeholder="Bairro" PostBackUrl="~/script/login.aspx" TabIndex="18" Text="Cancelar"/>
                             <asp:Button ID="bt_save" runat="server" CssClass="style-bt-save" Font-Bold="True" Font-Size="Medium" OnClick="bt_save_Click" placeholder="Bairro" TabIndex="19" Text="Salvar" />
                             <br />

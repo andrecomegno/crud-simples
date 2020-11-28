@@ -22,13 +22,12 @@ namespace CRUD.script
         {
             try
             {
-                RegisterLogic();       
+                RegisterError();       
             }
             catch (System.Exception ex)
             {
                 MessageBox.Show(ex.Message, "AVISO !", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-
         }
 
         protected void bt_search_Click(object sender, EventArgs e)
@@ -53,6 +52,8 @@ namespace CRUD.script
                         input_zip.Focus();
                         input_zip.Text = "";
                     }
+
+                    error.Text = "CEP não encontrado !";
                 }
             }
         }
@@ -119,7 +120,7 @@ namespace CRUD.script
             database.closeConnection();            
         }
 
-        private void RegisterLogic()
+        private void RegisterError()
         {
             if (String.IsNullOrEmpty(input_name.Text))
             {

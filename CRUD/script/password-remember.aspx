@@ -7,28 +7,23 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <link href="../css/password-remember.css" rel="Stylesheet" type="text/css"/>
-    <style type="text/css">
-        .auto-style2 {
-            width: 100%;
-            height: 456px;
-        }
-    </style>
-</head>
+    </head>
 <body>
-    <form id="formRemember" runat="server">
+    <form class="form-remember" id="form_remember" runat="server">
         <div>
-            <table class="auto-style2">
+            <table class="tb-main">
                  <tr>
-                    <td>&nbsp;</td>
-                     <td>
-                         <asp:Panel CssClass="style-panel-two" runat="server" HorizontalAlign="Center" ID="panel_two">
+                    <td class="td-left" id="td_left" ></td>
+                     <td id="td_center" class="td-center" >
+                         <asp:Panel CssClass="style-panel-two" runat="server" ID="panel_email">
                              <br />
                              <asp:TextBox CssClass="style-txt-email" placeholder="E-Mail" runat="server" MaxLength="250" TabIndex="6" ID="input_email" TextMode="Email"></asp:TextBox>
+                             <asp:Button  CssClass="style-bt-send" runat="server" Font-Bold="True" Font-Size="Medium" Text="Enviar" ID="bt_send"/>
                              <br />
                              <br />
                          </asp:Panel>
                      </td>
-                    <td>&nbsp;</td>
+                    <td id="td_right" class="td-right">&nbsp;</td>
                 </tr>
              </table>
         </div>

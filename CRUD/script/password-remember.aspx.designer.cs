@@ -15,22 +15,22 @@ namespace CRUD.script
     {
 
         /// <summary>
-        /// Controle formRemember.
+        /// Controle form_remember.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm formRemember;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form_remember;
 
         /// <summary>
-        /// Controle panel_two.
+        /// Controle panel_email.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panel_two;
+        protected global::System.Web.UI.WebControls.Panel panel_email;
 
         /// <summary>
         /// Controle input_email.
@@ -40,5 +40,14 @@ namespace CRUD.script
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox input_email;
+
+        /// <summary>
+        /// Controle bt_send.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button bt_send;
     }
 }

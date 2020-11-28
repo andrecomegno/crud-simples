@@ -12,7 +12,7 @@
     <form class="form-login" runat="server" id="formLogin" >
         <table class="tab-main">
             <tr>
-                <td class="td-left"></td>
+                <td class="td-left">&nbsp;</td>
                 <td class="td-center">
                     <asp:Panel CssClass="style-panel-login" runat="server" HorizontalAlign="Center">
                         <br />
