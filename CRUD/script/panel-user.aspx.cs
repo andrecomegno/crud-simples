@@ -188,7 +188,9 @@ namespace CRUD.script
                 input_city.Text = "";
                 input_state.Text = "";
                 input_email.Text = "";
+                input_email_confirm.Text = "";
                 input_password.Text = "";
+                input_password_confirm.Text = "";
                 id = "";                
             }
         }
@@ -216,6 +218,8 @@ namespace CRUD.script
                 bt_zip.Enabled = true;
                 bt_zip.CssClass = "style-bt-zip";
             }
+
+            error.Text = "";
         }
 
         protected void bt_delete_Click(object sender, EventArgs e)
@@ -257,12 +261,14 @@ namespace CRUD.script
                     GridView1.DataBind();
                 }
 
+                error.ForeColor = System.Drawing.Color.Red;
+                error.Text = "Cadastro excluido com sucesso !";
+
                 database.closeConnection();
             }
             catch (System.Exception ex)
             {
-                MessageBox.Show(ex.Message, "AVISO !", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                error.Text = "Cadastro excluido com sucesso !";
+                MessageBox.Show(ex.Message, "AVISO !", MessageBoxButtons.OK, MessageBoxIcon.Information);                
             }
             finally
             {
@@ -278,7 +284,9 @@ namespace CRUD.script
                 input_city.Text = "";
                 input_state.Text = "";
                 input_email.Text = "";
+                input_email_confirm.Text = "";
                 input_password.Text = "";
+                input_email_confirm.Text = "";
                 id = "";
             }
         }
@@ -320,7 +328,9 @@ namespace CRUD.script
                     input_city.Text = "";
                     input_state.Text = "";
                     input_email.Text = "";
+                    input_email_confirm.Text = "";
                     input_password.Text = "";
+                    input_email_confirm.Text = "";
                     id = "";
                 }
             }
