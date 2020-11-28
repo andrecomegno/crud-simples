@@ -12,10 +12,7 @@ namespace CRUD.script
 {
     public partial class login : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {                       
-            
-        }
+        protected void Page_Load(object sender, EventArgs e) { }
 
         protected void bt_enter_Click(object sender, EventArgs e)
         {
@@ -50,9 +47,7 @@ namespace CRUD.script
                     else
                     {
                         error.Text = "Email / Senha não encontrada";
-                    }
-                    
-                    
+                    }      
                 }
 
                 database.closeConnection();                

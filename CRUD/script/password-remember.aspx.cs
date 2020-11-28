@@ -9,9 +9,6 @@ namespace CRUD.script
 {
     public partial class password_remember : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
+        protected void Page_Load(object sender, EventArgs e) { }
     }
 }

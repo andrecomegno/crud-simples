@@ -338,7 +338,6 @@ namespace CRUD.script
             {
                 MessageBox.Show(ex.Message, "AVISO !", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-
         }
 
         protected void GridViewLogic()
@@ -353,11 +352,9 @@ namespace CRUD.script
                 GridView1.DataSource = dt;
                 GridView1.DataBind();
             }
-
             GridView1.Columns[0].ItemStyle.Width = 20;
             GridView1.Columns[1].ItemStyle.Width = 300;
-            GridView1.Columns[3].ItemStyle.Width = 110;
-            
+            GridView1.Columns[3].ItemStyle.Width = 110;            
         }
 
         protected void DeleteLogic()
@@ -408,7 +405,6 @@ namespace CRUD.script
                 bt_zip.Enabled = false;
                 bt_zip.CssClass = "style-bt-zip-off";
             }
-
         }
 
         protected void BTlogic()
@@ -437,7 +433,6 @@ namespace CRUD.script
             {
                 bt_zip.CssClass = "style-bt-zip-off";
             }
-
         }
 
     }

@@ -13,10 +13,7 @@ namespace CRUD.script
 {
     public partial class register : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
+        protected void Page_Load(object sender, EventArgs e) { }
 
         protected void bt_save_Click(object sender, EventArgs e)
         {
@@ -63,11 +60,9 @@ namespace CRUD.script
             database database = new database();
 
             database.openConnection();
-
-            // Linha de comando do INSERT INTO ENDEREÇO
+            
             MySqlCommand objCmdEndereco = new MySqlCommand("insert into endereco (id, logradouro, numero, cep, bairro, cidade, estado) value(null, ?, ?, ?, ?, ?, ?)", database.getConnection());
-
-            // LINHA DE COMANDO QUE ADD CADA UM DOS CAMPOS DO CADASTRO
+                        
             objCmdEndereco.Parameters.Add("@logradouro", MySqlDbType.VarChar, 256).Value = input_address.Text;
             objCmdEndereco.Parameters.Add("@numero", MySqlDbType.Int32).Value = input_address_number.Text;
             objCmdEndereco.Parameters.Add("@cep", MySqlDbType.Int32).Value = input_zip.Text;
@@ -75,13 +70,10 @@ namespace CRUD.script
             objCmdEndereco.Parameters.Add("@cidade", MySqlDbType.VarChar, 30).Value = input_city.Text;
             objCmdEndereco.Parameters.Add("@estado", MySqlDbType.VarChar, 20).Value = input_state.Text;
 
-            // LINHA DE COMANDO QUE EXECUTAR NO BANCO DE DADOS
             objCmdEndereco.ExecuteNonQuery();
 
-            // LINHA DE COMANDO QUE PEGA O ID DA TABELA ENDERECO PARA ADD NA TABELA PESSOA NO CAMPO ENDERECO 
             long idEndereco = objCmdEndereco.LastInsertedId;
 
-            // Linha de comando do INSERT INTO PESSOA
             MySqlCommand objCmdPessoa = new MySqlCommand("insert into pessoa (id, nome, cpf, email, senha, endereco) value(null, ?, ?, ?, ?, ?)", database.getConnection());
 
             objCmdPessoa.Parameters.Add("@nome", MySqlDbType.VarChar, 256).Value = input_name.Text;
@@ -93,14 +85,12 @@ namespace CRUD.script
             objCmdPessoa.ExecuteNonQuery();
             long idPessoa = objCmdPessoa.LastInsertedId;
 
-            // Linha de comando do INSERT INTO TELEFONE TIPO
             MySqlCommand objCmdTelefoneTipo = new MySqlCommand("insert into telefone_tipo (id, tipo) value(null, ?)", database.getConnection());
             objCmdTelefoneTipo.Parameters.Add("@tipo", MySqlDbType.VarChar, 10).Value = input_phone_type.Text;
 
             objCmdTelefoneTipo.ExecuteNonQuery();
             long idTelefoneTipo = objCmdTelefoneTipo.LastInsertedId;
 
-            // Linha de comando do INSERT INTO TELEFONE
             MySqlCommand objCmdTelefone = new MySqlCommand("insert into telefone (id, numero, ddd, tipo) value(null, ?, ?, ?)", database.getConnection());
             objCmdTelefone.Parameters.Add("@numero", MySqlDbType.Int32).Value = input_phone.Text;
             objCmdTelefone.Parameters.Add("@ddd", MySqlDbType.Int32).Value = input_ddd.Text;
@@ -109,13 +99,11 @@ namespace CRUD.script
             objCmdTelefone.ExecuteNonQuery();
             long idTelefone = objCmdTelefone.LastInsertedId;
 
-            // Linha de comando do INSERT INTO PESSOA TELEFONE
             MySqlCommand objCmdPessoaTelefone = new MySqlCommand("insert into pessoa_telefone (id_pessoa, id_telefone) value(?, ?)", database.getConnection());
             objCmdPessoaTelefone.Parameters.Add("@id_pessoa", MySqlDbType.Int32).Value = idPessoa;
             objCmdPessoaTelefone.Parameters.Add("@id_telefone", MySqlDbType.Int32).Value = idTelefone;
 
-            objCmdPessoaTelefone.ExecuteNonQuery();            
-
+            objCmdPessoaTelefone.ExecuteNonQuery();
             database.closeConnection();            
         }
 
