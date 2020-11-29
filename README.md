@@ -1,5 +1,4 @@
 <h1 align="center">
-CRUD SIMPLES
 <br>
   <img src="https://user-images.githubusercontent.com/55299009/100528604-8ed78100-31bd-11eb-8570-6fbc48ddfcc9.png" alt="YOUR_PROJECT_NAME" width="250">
 <br>
