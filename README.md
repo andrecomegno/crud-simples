@@ -26,9 +26,9 @@
 [//]: # 
 Assuntos Abordados no Desenvolvimento do CRUD :
 
-- :eight_spoked_asterisk: **C#** — Csharp no back-end
-- ⚛️ **CSS** — CSS construção de interfaces para usuário
-- :diamond_shape_with_a_dot_inside: **ASP .NET** — interface gráfica com o usuário
+- :eight_spoked_asterisk: **C#** — no back-end
+- ⚛️ **CSS** — para melhorar a interface final
+- :diamond_shape_with_a_dot_inside: **ASP .NET** — interface gráfica
 
 ## Configuração do Projeto:
 
