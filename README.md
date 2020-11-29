@@ -15,10 +15,12 @@
 
 ## Gif's
 <div>
-  <img src="https://user-images.githubusercontent.com/55299009/100528418-75cdd080-31bb-11eb-869e-7dff037e24b5.gif" alt="editar" height="280">
-  <img src="https://user-images.githubusercontent.com/55299009/100528476-060c1580-31bc-11eb-81b6-53e9546d3368.gif" alt="buscar" height="280">
-  <img src="https://user-images.githubusercontent.com/55299009/100528489-2c31b580-31bc-11eb-8e12-62f112ce2656.gif" alt="excluir" height="280">
+  <img src="https://user-images.githubusercontent.com/55299009/100528418-75cdd080-31bb-11eb-869e-7dff037e24b5.gif" alt="editar" height="380"> 
+  <img src="https://user-images.githubusercontent.com/55299009/100528489-2c31b580-31bc-11eb-8e12-62f112ce2656.gif" alt="excluir" height="380">
+  <img src="https://user-images.githubusercontent.com/55299009/100528476-060c1580-31bc-11eb-81b6-53e9546d3368.gif" alt="buscar" height="280"> 
 </div>
+
+
 
 <hr />
 
