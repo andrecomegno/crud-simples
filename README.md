@@ -35,7 +35,7 @@ Assuntos Abordados no Desenvolvimento do CRUD :
 ## Configuração do Projeto:
 
 - Visual Studio 2019
-- MySQL Workbench
+- MySQL Workbench, nome do banco cadastro, senha 123456
 - Diagrama Entidade-Relacionamento (DER):
  <img src="https://user-images.githubusercontent.com/55299009/100529150-28556180-31c3-11eb-9f7c-910e3cd66422.png" alt="DER" height="300">
  
