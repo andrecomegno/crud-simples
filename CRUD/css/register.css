@@ -1,0 +1,153 @@
+﻿.td-left {
+    Width: 400px;
+}
+
+.td-center {
+    Width: inherit;
+}
+
+.td-right {
+    Width: 400px;
+}
+
+/* panel one */
+.style-panel-one {
+    Width: 600px;
+    Height: 100px;
+    background-color: #daecff;
+}
+
+.style-txt-name {
+    Width: 570px;
+    margin-left: 10px;
+    margin-right: 8px;
+}
+
+.style-txt-cpf {
+    Width: 108px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.style-txt-ddd {
+    Width: 30px;
+    margin-left: 8px;
+}
+
+.style-txt-phone {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.style-phone-type {
+    margin-left: 8px;
+}
+
+/* panel two */
+.style-panel-two {
+    Width: 600px;
+    Height: 130px;
+    margin-top: 4px;
+    background-color: #c8e5fe;    
+}
+
+.style-txt-zip {
+    Width: 108px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+}
+
+.style-txt-address {
+    Width: 481px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.style-txt-address-number {
+    Width: 63px;
+    margin-bottom: 8px;
+    margin-left: 10px;
+}
+
+.style-txt-neighborhood {
+    Width: 237px;
+    margin-left: 8px;
+}
+
+.style-txt-city {
+    Width: 210px;
+    margin-left: 23px;
+    margin-right: 8px;
+}
+
+.style-txt-state {
+    Width: 63px;
+    margin-left: 10px;
+    margin-right: 8px;
+}
+
+.style-link-search {
+    margin-left: 8px;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.style-bt-search {
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    background-color: #5bbe5d;
+    color: white;
+    padding: 2px 1px;
+    border: none;
+    cursor: pointer;
+    width: 70px;
+}
+
+/* panel three */
+.style-panel-three {
+    Width: 600px;
+    Height: 145px;
+    margin-top: 4px;
+    background-color: #daecff;
+}
+
+.style-txt-email, .style-txt-password {
+    Width: 200px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+}
+
+.style-bt-cancel {
+    background-color: #ff4f4f;
+    color: white;
+    padding: 4px 2px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    margin-left: 380px;
+    margin-top: 22px;
+}
+
+.style-bt-save {
+    background-color: #5bbe5d;
+    color: white;
+    padding: 4px 2px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    margin-left: 8px;
+}
+
+/* panel four */
+.style-panel-four {
+    background-color: #f1f1f1;
+}
+
+.style-error {
+    background-color: white;
+    margin-left: 8px;
+}

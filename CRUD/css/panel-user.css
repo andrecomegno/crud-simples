@@ -1,0 +1,264 @@
+﻿.tb-left {
+    Width: 400px;
+}
+
+.tb-center {
+    Width: inherit;
+}
+
+.tb-right {
+    Width: 400px;
+}
+
+/* Panel one */
+.style-panel-user-edit {
+    Width: 600px;
+    height: 265px;
+    background-color: #daecff;
+}
+
+.style-txt-name {
+    Width: 570px;
+    margin-left: 10px;
+    margin-right: 8px;
+}
+
+.style-txt-cpf {
+    Width: 108px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.style-txt-ddd {
+    Width: 30px;
+    margin-left: 8px;
+}
+
+.style-txt-phone {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.style-phone-type {
+    margin-left: 8px;
+}
+
+.style-txt-zip {
+    Width: 108px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+}
+
+.style-bt-zip {
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    background-color: #5bbe5d;
+    color: white;
+    padding: 2px 1px;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+}
+
+.style-bt-zip-off {
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    background-color: #c8e5fe;
+    color: white;
+    padding: 2px 1px;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+}
+
+.style-txt-address {
+    Width: 481px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.style-txt-address-number {
+    Width: 63px;
+    margin-bottom: 8px;
+    margin-left: 10px;
+}
+
+.style-txt-neighborhood {
+    Width: 237px;
+    margin-left: 8px;
+}
+
+.style-txt-city {
+    Width: 210px;
+    margin-left: 23px;
+    margin-right: 8px;
+}
+
+.style-txt-state {
+    Width: 63px;
+    margin-left: 10px;
+    margin-right: 8px;
+}
+
+.style-bt-search {
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    background-color: #5bbe5d;
+    color: white;
+    padding: 2px 1px;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+}
+
+.style-txt-email, .style-txt-password {
+    Width: 200px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+}
+
+/* button edit save delete cancel*/
+.style-bt-user {
+    height: 40px;
+    background-color: #daecff;
+}
+
+.style-bt-save {
+    background-color: #5bbe5d;
+    margin-left: 8px;
+    margin-bottom: 1px;
+    color: white;
+    padding: 2px 2px;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+}
+
+.style-bt-save-off {
+    background-color: #c8e5fe;
+    margin-left: 8px;
+    margin-bottom: 1px;
+    color: white;
+    padding: 2px 2px;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+}
+
+.style-bt-edit {
+    background-color: #5bbe5d;
+    margin-left: 8px;
+    margin-bottom: 1px;
+    color: white;
+    padding: 2px 2px;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+}
+
+.style-bt-edit-off {
+    background-color: #c8e5fe;
+    margin-left: 8px;
+    margin-bottom: 1px;
+    color: white;
+    padding: 2px 2px;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+}
+
+.style-bt-delete {
+    background-color: #5bbe5d;
+    margin-left: 8px;
+    margin-bottom: 1px;
+    color: white;
+    padding: 2px 2px;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+}
+
+.style-bt-delete-off {
+    background-color: #c8e5fe;
+    margin-left: 8px;
+    margin-bottom: 1px;
+    color: white;
+    padding: 2px 2px;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+}
+
+.style-bt-cancel {
+    background-color: #5bbe5d;
+    margin-left: 8px;
+    margin-bottom: 1px;
+    color: white;
+    padding: 2px 2px;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+}
+
+.style-bt-cancel-off {
+    background-color: #c8e5fe;
+    margin-left: 8px;
+    margin-bottom: 1px;
+    color: white;
+    padding: 2px 2px;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+}
+
+/* Panel two */
+.style-panel-search {
+    Width: 600px;
+    height: 60px;
+    margin-top: 8px;
+    background-color: #c8e5fe;
+}
+
+.style-txt-search {
+    Width: 481px;
+    margin-left: 8px;
+}
+
+/* panel three */
+.style-panel-tab {
+    Width: 600px;
+    margin-top: 8px;
+    background-color: #daecff;
+}
+
+/* panel three */
+.style-panel-bt {
+    background-color: #daecff;
+}
+
+/* panel four */
+.style-bt-exit {
+    background-color: #ff4f4f;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    margin-top: 2px;
+    color: white;
+    padding: 2px 2px;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+}
+
+/* panel error */
+.style-panel-error {
+    background-color: #f1f1f1;
+}
+
+.style-error {
+    background-color: white;
+    margin-left: 8px;
+}
