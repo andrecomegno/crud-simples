@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <link href="../css/password-remember.css" rel="Stylesheet" type="text/css"/>
+    <link href="css/password-remember.css" rel="Stylesheet" type="text/css"/>
     </head>
 <body>
     <form class="form-remember" id="form_remember" runat="server">

@@ -6,8 +6,8 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Painel - Usuario</title>
-    <link href="../css/panel-user.css" rel="Stylesheet" type="text/css"/>
-    <link href="../css/grindview.css" rel="Stylesheet" type="text/css"/>
+    <link href="css/panel-user.css" rel="Stylesheet" type="text/css"/>
+    <link href="css/grindview.css" rel="Stylesheet" type="text/css"/>
 </head>
 <body>
     <form id="form_panel_user" runat="server">

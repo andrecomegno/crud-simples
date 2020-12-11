@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <link href="../css/register.css" rel="Stylesheet" type="text/css"/>
+    <link href="css/register.css" rel="Stylesheet" type="text/css"/>
 </head>
 <body>
     <form class="form-register" runat="server" id="formRgister">

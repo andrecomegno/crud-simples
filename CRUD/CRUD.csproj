@@ -246,10 +246,10 @@
     <Content Include="css\panel-user.css" />
     <Content Include="css\password-remember.css" />
     <Content Include="css\register.css" />
-    <Content Include="script\login.aspx" />
-    <Content Include="script\panel-user.aspx" />
-    <Content Include="script\password-remember.aspx" />
-    <Content Include="script\register.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="panel-user.aspx" />
+    <Content Include="password-remember.aspx" />
+    <Content Include="register.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -260,32 +260,32 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="script\database.cs" />
-    <Compile Include="script\login.aspx.cs">
+    <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="script\login.aspx.designer.cs">
+    <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="script\panel-user.aspx.cs">
+    <Compile Include="panel-user.aspx.cs">
       <DependentUpon>panel-user.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="script\panel-user.aspx.designer.cs">
+    <Compile Include="panel-user.aspx.designer.cs">
       <DependentUpon>panel-user.aspx</DependentUpon>
     </Compile>
-    <Compile Include="script\password-remember.aspx.cs">
+    <Compile Include="password-remember.aspx.cs">
       <DependentUpon>password-remember.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="script\password-remember.aspx.designer.cs">
+    <Compile Include="password-remember.aspx.designer.cs">
       <DependentUpon>password-remember.aspx</DependentUpon>
     </Compile>
-    <Compile Include="script\register.aspx.cs">
+    <Compile Include="register.aspx.cs">
       <DependentUpon>register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="script\register.aspx.designer.cs">
+    <Compile Include="register.aspx.designer.cs">
       <DependentUpon>register.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
