@@ -1,6 +1,6 @@
 <h1 align="center">
 <br>
-  <img src="https://user-images.githubusercontent.com/55299009/100528604-8ed78100-31bd-11eb-8570-6fbc48ddfcc9.png" alt="YOUR_PROJECT_NAME" width="250">
+  CRUD SIMPLES
 <br>
 <br>
 </h1>
@@ -15,13 +15,12 @@
 
 ## Gif's
 <div>
+  <p><img src="https://user-images.githubusercontent.com/55299009/100528604-8ed78100-31bd-11eb-8570-6fbc48ddfcc9.png" alt="login" height="380"></p> 
   <p><img src="https://user-images.githubusercontent.com/55299009/100528418-75cdd080-31bb-11eb-869e-7dff037e24b5.gif" alt="editar" height="380"></p> 
   <p><img src="https://user-images.githubusercontent.com/55299009/100528489-2c31b580-31bc-11eb-8e12-62f112ce2656.gif" alt="excluir" height="380"></p> 
   <p><img src="https://user-images.githubusercontent.com/55299009/100528476-060c1580-31bc-11eb-81b6-53e9546d3368.gif" alt="buscar" height="280"></p> 
-  <p><img src="https://user-images.githubusercontent.com/55299009/102120924-f6c6d200-3e21-11eb-8e03-d68b898c9053.png alt="cadastro" height="280"></p> 
+  <p><img src="https://user-images.githubusercontent.com/55299009/102121347-a00dc800-3e22-11eb-95ea-61b0d03bdcd8.jpg" alt="cadastro" height="280"></p> 
 </div>
-
-
 
 <hr />
 
