@@ -15,9 +15,10 @@
 
 ## Gif's
 <div>
-  <img src="https://user-images.githubusercontent.com/55299009/100528418-75cdd080-31bb-11eb-869e-7dff037e24b5.gif" alt="editar" height="380"> 
-  <img src="https://user-images.githubusercontent.com/55299009/100528489-2c31b580-31bc-11eb-8e12-62f112ce2656.gif" alt="excluir" height="380">
-  <img src="https://user-images.githubusercontent.com/55299009/100528476-060c1580-31bc-11eb-81b6-53e9546d3368.gif" alt="buscar" height="280"> 
+  <p><img src="https://user-images.githubusercontent.com/55299009/100528418-75cdd080-31bb-11eb-869e-7dff037e24b5.gif" alt="editar" height="380"></p> 
+  <p><img src="https://user-images.githubusercontent.com/55299009/100528489-2c31b580-31bc-11eb-8e12-62f112ce2656.gif" alt="excluir" height="380"></p> 
+  <p><img src="https://user-images.githubusercontent.com/55299009/100528476-060c1580-31bc-11eb-81b6-53e9546d3368.gif" alt="buscar" height="280"></p> 
+  <p><img src="https://user-images.githubusercontent.com/55299009/102120924-f6c6d200-3e21-11eb-8e03-d68b898c9053.png alt="cadastro" height="280"></p> 
 </div>
 
 
