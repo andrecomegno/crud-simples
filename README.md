@@ -9,10 +9,10 @@
 
 <p align="center">
   <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License MIT">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License MIT">   
+    <img src="https://img.shields.io/github/followers/andrecomegno.svg" alt="Followers">                                                                                      
   </a>
 </p>
-
 ## Gif's
 <div>
   <p><img src="https://user-images.githubusercontent.com/55299009/100528604-8ed78100-31bd-11eb-8570-6fbc48ddfcc9.png" alt="login" height="380"></p> 
