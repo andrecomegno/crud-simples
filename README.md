@@ -5,7 +5,7 @@
 <br>
 </h1>
 
-<p align="center">Crud simples, o projeto foi desenvolvido para um tabalho da faculdade, no crud contem login de usuario, cadastramento, delete, editar, salvar</p>
+<p align="center">Crud simples, o projeto foi desenvolvido para um trabalho da faculdade, no crud contem login de usuario, cadastramento, delete, editar, salvar</p>
 
 <p align="center">
   <a href="https://opensource.org/licenses/MIT">
